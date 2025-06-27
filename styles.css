@@ -1,0 +1,36 @@
+/* Estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Contenedor flexible */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Elementos dentro del contenedor */
+.item {
+  flex: 1 1 300px;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
